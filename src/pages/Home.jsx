@@ -16,11 +16,8 @@ const Home = () => {
             }
             catch (err)
             {
-                console.log(Error)
-            }
-            finally {
-                console.log('success')
-            }           
+                
+            }        
         }
         fetchFilms()
     }, [])

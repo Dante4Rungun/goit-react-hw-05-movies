@@ -11,7 +11,6 @@ const MovieDetails = () => {
     const [from, setFrom] = useState('')
 
     useEffect(() => {
-        console.log(location)
         if (location.pathname.includes('/cast') || location.pathname.includes('/reviews'))
         {
             setFrom(prevFrom => prevFrom)

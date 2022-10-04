@@ -11,8 +11,13 @@ const Reviews = () => {
 
     useEffect(() => {
         async function fetchReviews() {
-            const loadReviews = await api.fetchReviews(id)
-            setReviews(loadReviews)
+            try {
+                const loadReviews = await api.fetchReviews(id)
+                setReviews(loadReviews)
+            }
+            catch (err) {
+                
+            }
         }
         fetchReviews()
     }, [id])

@@ -23,7 +23,7 @@ const Movies = () => {
                 setMovies(fetchMovies)
             }
             catch (err) {
-                console.log(err)
+                
             }
         }
         fetchSearch()

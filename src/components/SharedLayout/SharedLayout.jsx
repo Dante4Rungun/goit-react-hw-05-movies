@@ -11,8 +11,8 @@ export const SharedLayout = () => {
               <span style={{ color: '#E1E57B'}}>Your</span><span style={{ color: '#2196f3'}}>Films</span>
             </Logo>
             <Navigation>
-              <Link to="/" end>Home</Link>
-              <Link to="/movies">Movies</Link>
+              <Link to="/goit-react-hw-05-movies" end>Home</Link>
+              <Link to="/goit-react-hw-05-movies/movies">Movies</Link>
             </Navigation>
             <Auth>Authorize</Auth>
           </Container>

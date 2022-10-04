@@ -10,8 +10,13 @@ const Cast = () => {
 
     useEffect(() => {
         async function fetchCast() {
-            const loadCast = await api.fetchCast(id)
-            setCast(loadCast)
+            try {
+                const loadCast = await api.fetchCast(id)
+                setCast(loadCast)
+            }
+            catch (err) {
+                
+            }
         }
         fetchCast()
     },[id])
